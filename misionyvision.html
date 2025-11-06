@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Misión y Visión - Escalones de Vida</title>
+
+  <!-- Bootstrap y AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ✅ NAVBAR CORREGIDA (igual a las demás páginas) -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.jpeg" alt="Logo" class="me-2 logo-rect">
+        <span class="fs-4 fw-bold text-white">Escalones de Vida</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link nav-hover" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="objetivos.html">Objetivos</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover active" href="misionyvision.html">Misión y Visión</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="alcance.html">Alcance</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <div class="container contenedor mt-5">
+    <h2 class="text-center mb-4">Misión</h2>
+    <p class="lead text-center">
+      Desarrollar sistemas hidropónicos automatizados que promuevan la sostenibilidad, el ahorro de recursos 
+      y la educación ambiental en entornos urbanos.
+    </p>
+
+    <div class="text-center mt-4" data-aos="fade-up">
+      <img src="img/img6.png" alt="Misión" class="img-efecto">
+    </div>
+
+    <h2 class="text-center mt-5 mb-4">Visión</h2>
+    <p class="lead text-center">
+      Ser un referente en innovación tecnológica para la agricultura urbana, integrando IoT y sostenibilidad 
+      en el cultivo responsable de alimentos.
+    </p>
+
+    <div class="text-center mt-4" data-aos="fade-up">
+      <img src="img/img7.png" alt="Visión" class="img-efecto">
+    </div>
+
+    <!-- 🌱 SECCIÓN DE VALORES -->
+    <section class="valores mt-5">
+      <h2 class="text-center mb-5">Nuestros Valores</h2>
+      <div class="row text-center justify-content-center">
+        <div class="col-md-3 mb-4 valor" data-aos="zoom-in" data-aos-delay="100">
+          <i class="bi bi-flower3 text-success"></i>
+          <h5 class="mt-3 fw-bold">Sostenibilidad</h5>
+          <p>Uso responsable de los recursos naturales y compromiso con el medio ambiente.</p>
+        </div>
+        <div class="col-md-3 mb-4 valor" data-aos="zoom-in" data-aos-delay="200">
+          <i class="bi bi-lightbulb text-warning"></i>
+          <h5 class="mt-3 fw-bold">Innovación</h5>
+          <p>Tecnología al servicio de la naturaleza para soluciones modernas y eficientes.</p>
+        </div>
+        <div class="col-md-3 mb-4 valor" data-aos="zoom-in" data-aos-delay="300">
+          <i class="bi bi-people text-info"></i>
+          <h5 class="mt-3 fw-bold">Colaboración</h5>
+          <p>Unimos esfuerzos y conocimiento para crecer y aprender juntos.</p>
+        </div>
+        <div class="col-md-3 mb-4 valor" data-aos="zoom-in" data-aos-delay="400">
+          <i class="bi bi-book text-success"></i>
+          <h5 class="mt-3 fw-bold">Educación</h5>
+          <p>Fomentamos el aprendizaje mediante la práctica y la experiencia directa.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center mt-5">
+      <a href="alcance.html" class="btn mx-2">Ver Alcance</a>
+      <a href="index.html" class="btn mx-2">Inicio</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <p class="mb-2">&copy; 2025 Escalones de Vida. Todos los derechos reservados.</p>
+    <div>
+      <a href="#"><i class="bi bi-facebook mx-2"></i></a>
+      <a href="#"><i class="bi bi-twitter mx-2"></i></a>
+      <a href="#"><i class="bi bi-instagram mx-2"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // 💡 Efecto de click en los valores
+    const valores = document.querySelectorAll(".valor");
+    valores.forEach(v => {
+      v.addEventListener("click", () => {
+        valores.forEach(x => x.classList.remove("activo"));
+        v.classList.add("activo");
+      });
+    });
+  </script>
+
+</body>
+</html>
