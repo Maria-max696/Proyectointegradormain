@@ -1,0 +1,424 @@
+/* ============================
+   🌱 ESTILO GENERAL
+============================ */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================
+   🌿 NAVBAR
+============================ */
+.custom-navbar {
+  background-color: #228B22 !important;
+  padding: 8px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.navbar {
+  background-color: #228B22 !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item {
+  margin: 0 12px;
+}
+
+.nav-item a {
+  color: #1A1A1A;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item a.active {
+  background-color: transparent !important;
+  color: #228B22 !important;
+  font-weight: bold;
+  border-bottom: 3px solid #228B22;
+  border-radius: 0 !important;
+  padding-bottom: 3px;
+}
+
+.nav-item a:hover {
+  color: #228B22 !important;
+}
+
+/* ============================
+   🌿 LOGO
+============================ */
+.logo-rect {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-rect:hover {
+  transform: scale(1.05);
+}
+
+/* ============================
+   📦 CONTENEDORES
+============================ */
+.container {
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* ============================
+   🔤 TEXTOS
+============================ */
+h1, h2, h3 {
+  color: #228B22;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+p, li {
+  color: #1A1A1A;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+h1::after, h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #228B22;
+  margin: 10px auto 20px auto;
+  border-radius: 5px;
+}
+
+/* ============================
+   🖼️ IMÁGENES
+============================ */
+.img-efecto {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(34, 139, 34, 0.5);
+  transition: all 0.4s ease;
+}
+
+.img-efecto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(34, 139, 34, 0.8);
+}
+
+/* ============================
+   🔘 BOTONES
+============================ */
+.btn {
+  background-color: #228B22;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 26px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #228B22;
+  border: 2px solid #228B22;
+  transform: scale(1.05);
+}
+
+/* ============================
+   🎞️ CARRUSEL
+============================ */
+#miCarrusel {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  margin-top: 30px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.carousel-caption {
+  bottom: 45px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+  color: #EAEAEA;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+}
+
+.carousel-caption .btn {
+  background-color: #228B22;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #fff;
+  color: #228B22;
+  border: 2px solid #228B22;
+  transform: scale(1.05);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #228B22;
+}
+
+/* ============================
+   ⚙️ FOOTER
+============================ */
+footer {
+  font-size: 0.9rem;
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer a i {
+  font-size: 1.4rem;
+  color: #228B22;
+  transition: 0.3s;
+}
+
+footer a i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* ============================
+   ✨ ANIMACIONES
+============================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================
+   🌿 SECCIÓN DE VALORES DINÁMICA
+============================ */
+.valores {
+  background: linear-gradient(180deg, #ffffff, #e9fbe9);
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.valor {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.valor:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(34,139,34,0.4);
+}
+
+.valor.activo {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(34,139,34,0.6);
+  border: 2px solid #228B22;
+}
+
+.valor h5 {
+  color: #228B22;
+}
+
+/* ============================
+   🎯 SECCIÓN OBJETIVOS DINÁMICA
+============================ */
+.objetivo-card {
+  background: #ffffff;
+  color: #1A1A1A;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.4s, box-shadow 0.4s, background 0.4s;
+}
+.objetivo-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: #e9fbe9;
+  box-shadow: 0 8px 25px rgba(34,139,34,0.5);
+}
+
+.objetivo-icon {
+  font-size: 2.8rem;
+  color: #228B22;
+  margin-bottom: 15px;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+.objetivo-card:hover .objetivo-icon {
+  color: #1A1A1A;
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* ============================
+   🌎 SECCIÓN ALCANCE Y DELIMITACIÓN
+============================ */
+.alcance-fondo {
+  background: linear-gradient(180deg, #ffffff, #ecfcec);
+  padding: 60px 0;
+}
+
+.delimitacion {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 40px;
+  padding: 40px 30px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   🌍 IMPACTO (ÁMBITOS)
+============================ */
+.impacto-card {
+  background: linear-gradient(145deg, #ffffff, #e8ffe8);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.impacto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(34,139,34,0.4);
+}
+
+.impacto-card i {
+  font-size: 3.5rem;
+  color: #228B22;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.impacto-card:hover i {
+  color: #145214;
+}
+
+/* ============================
+   ♻️ IMPACTO Y SOSTENIBILIDAD
+============================ */
+.impacto-sostenibilidad {
+  background: linear-gradient(180deg, #ffffff, #e9fbe9);
+  padding: 80px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.ods-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.ods-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(34,139,34,0.4);
+}
+
+.ods-icon {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  font-size: 2.8rem;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.bg-ods2 {
+  background-color: #DDA63A; /* color oficial ODS 2 */
+}
+
+.bg-ods12 {
+  background-color: #BF8B2E; /* color oficial ODS 12 */
+}
+
+.ods-card h4 {
+  color: #228B22;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ods-card p {
+  color: #333;
+  font-size: 16px;
+}
